@@ -1,0 +1,702 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif !important;
+}
+
+/*NAVBAR */
+
+nav {
+  padding-top: 3em !important;
+  padding-bottom: 3rem !important;
+}
+
+nav .local img {
+  margin-top: -0.5rem;
+  align-items: center;
+}
+
+nav img {
+  float: left;
+}
+
+nav form {
+  padding-left: 1rem;
+  padding-right: 3rem;
+  height: 50px;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #191f28 !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  align-items: center;
+  display: flex;
+}
+
+nav .cadastro {
+  margin-top: -1rem;
+  font-weight: 500;
+  margin-left: 3rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  border-radius: 10px;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 458px) {
+  nav {
+    text-align: center;
+  }
+
+  nav form {
+    margin-left: 5rem;
+    margin-top: 1rem;
+  }
+
+  nav .cadastro {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  nav {
+    text-align: center;
+  }
+
+  nav .cadastro {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+  nav {
+    width: 100vw;
+  }
+
+  nav img {
+    width: 100%;
+  }
+
+  nav .local img {
+    width: 20%;
+  }
+
+  nav form {
+    margin-top: 2rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+    margin-top: 2rem;
+    width: 12.9vw;
+  }
+
+  nav .cadastro {
+    padding-left: 2rem;
+    padding-right: 3rem;
+    margin-left: 0;
+    font-size: 0.7rem;
+  }
+}
+
+/*MAIN */
+main {
+  background: url("../img/bg1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+main h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  padding-top: 5rem;
+  font-weight: 700;
+}
+
+main p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+@media screen and (max-width: 458px) {
+  main {
+    background-position-y: -90px;
+  }
+
+  main button {
+    padding: 0;
+    width: 90%;
+  }
+
+  main h1 {
+    padding: 0;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 6rem;
+  }
+
+  main p {
+    padding: 0;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 6rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  main h1 {
+    padding: 0;
+    padding-top: 3rem;
+    font-size: 2.5rem;
+  }
+
+  main p {
+    padding: 0;
+    font-size: 1.3rem;
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+  main h1 {
+    padding: 0;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  main p {
+    padding: 0;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 1rem;
+  }
+}
+
+/* CARDS */
+
+#conecta {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+#conecta h4 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+  padding-left: 0rem;
+  color: #191f28;
+}
+
+#conecta .cards {
+  display: flex;
+}
+
+#conecta .card1:first-child {
+  margin-left: 0;
+}
+
+#conecta .card1 {
+  border-radius: 10px;
+  margin-left: 1rem;
+  transition: all 0.4s;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
+}
+
+#conecta .card1 img {
+  width: 100%;
+}
+
+#conecta .card1:hover {
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.08);
+}
+
+#conecta .cards .horario {
+  display: flex;
+}
+
+#conecta .cards .horario .divider {
+  color: #c4c4c4;
+  font-weight: 700;
+}
+
+#conecta .cards .horario p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  color: #ff2948;
+  font-size: 0.8rem;
+}
+
+#conecta .cards .titulo h5 {
+  padding-left: 1rem;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+#conecta .cards .lugar p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  color: #c4c4c4;
+}
+
+@media screen and (max-width: 458px) {
+  #conecta .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #conecta h4 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  #conecta .card1:first-child {
+    margin: 1rem;
+  }
+
+  #conecta .card1 {
+    padding: 0;
+    margin: 0;
+    margin-top: 3rem;
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  #conecta .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #conecta h4 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  #conecta .card1:first-child {
+    margin-left: 10rem;
+  }
+
+  #conecta .card1 {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    margin-left: 10rem;
+    margin-top: 3rem;
+  }
+}
+
+/* DESTAQUE */
+
+#destaque {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#destaque h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  padding-left: 0rem;
+  color: #191f28;
+}
+
+#destaque .cards {
+  display: flex;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+#destaque .imagem img {
+  width: 90%;
+}
+
+#destaque .texto {
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+
+#destaque .texto .horario p {
+  color: #ff2948;
+}
+
+#destaque .texto .titulo h5 {
+  color: #191f28;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#destaque .texto .lugar p {
+  color: #c4c4c4;
+  padding-top: 2rem;
+}
+
+#destaque button {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  margin-top: 8rem;
+  margin-left: 2rem;
+  outline: 0;
+}
+
+@media screen and (max-width: 458px) {
+  #destaque h4 {
+    text-align: center;
+  }
+
+  #destaque .cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin: 1rem;
+  }
+
+  #destaque .texto {
+    padding: 0;
+  }
+
+  #destaque .imagem {
+    margin: 0;
+    padding: 0;
+  }
+
+  #destaque .imagem img {
+    width: 100%;
+  }
+
+  #destaque .horario p {
+    margin: 0;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 10px;
+    padding: 0;
+  }
+
+  #destaque .titulo h5 {
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 10px;
+  }
+
+  #destaque .lugar p {
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+  }
+
+  #destaque button {
+    margin: 0;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 10px;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  #destaque h4 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  #destaque .cards {
+    padding: 0;
+    flex-direction: column;
+    margin: 6rem;
+  }
+
+  #destaque .imagem img {
+    width: 100%;
+  }
+
+  #destaque .texto {
+    padding: 1rem;
+  }
+
+  #destaque button {
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* VISTO */
+
+#visto {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+#visto h4 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+  padding-left: 0rem;
+  color: #191f28;
+}
+
+#visto .cards {
+  display: flex;
+}
+
+#visto .card1:first-child {
+  margin-left: 0;
+}
+
+#visto .card1 {
+  border-radius: 10px;
+  margin-left: 1rem;
+  transition: all 0.4s;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
+}
+
+#visto .card1 img {
+  width: 100%;
+}
+
+#visto .card1:hover {
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.08);
+}
+
+#visto .cards .horario {
+  display: flex;
+}
+
+#visto .cards .horario .divider {
+  color: #c4c4c4;
+  font-weight: 700;
+}
+
+#visto .cards .horario p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  color: #ff2948;
+  font-size: 0.8rem;
+}
+
+#visto .cards .titulo h5 {
+  padding-left: 1rem;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+#visto .cards .lugar p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  color: #c4c4c4;
+}
+
+@media screen and (max-width: 458px) {
+  #visto .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #visto h4 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+  }
+
+  #visto .card1:first-child {
+    margin: 0;
+    margin: 1rem;
+  }
+
+  #visto .card1 {
+    padding: 0;
+    margin: 0;
+    margin-top: 3rem;
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  #visto .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #visto h4 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  #visto .card1:first-child {
+    margin-left: 10rem;
+  }
+
+  #visto .card1 {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    margin-left: 10rem;
+    margin-top: 3rem;
+  }
+}
+
+/* EVENTOS */
+
+#eventos {
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+#eventos h4 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+  padding-left: 0rem;
+  color: #191f28;
+}
+
+#eventos .cards {
+  display: flex;
+}
+
+#eventos .card1:first-child {
+  margin-left: 0;
+}
+
+#eventos .card1 {
+  border-radius: 10px;
+  margin-left: 1rem;
+  transition: all 0.4s;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
+}
+
+#eventos .card1 img {
+  width: 100%;
+}
+
+#eventos .card1:hover {
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.08);
+}
+
+#eventos .cards .horario {
+  display: flex;
+}
+
+#eventos .cards .horario .divider {
+  color: #c4c4c4;
+  font-weight: 700;
+}
+
+#eventos .cards .horario p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  color: #ff2948;
+  font-size: 0.8rem;
+}
+
+#eventos .cards .titulo h5 {
+  padding-left: 1rem;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+#eventos .cards .lugar p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  color: #c4c4c4;
+}
+
+@media screen and (max-width: 458px) {
+  #eventos .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #eventos h4 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  #eventos .card1 {
+    padding: 0;
+    margin: 0;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  #eventos .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #eventos h4 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  #eventos .card1:first-child {
+    margin-left: 10rem;
+  }
+
+  #eventos .card1 {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    margin-left: 10rem;
+    margin-top: 3rem;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  background: #191f28;
+  background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer .logo {
+  text-align: center;
+}
